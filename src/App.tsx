@@ -1,8 +1,9 @@
 import { useCallback, useEffect, useState } from "react"
-import { HangmanDrawing } from "./HangmanDrawing"
-import { HangmanWord } from "./HangmanWord"
-import { Keyboard } from "./Keyboard"
+import { HangmanDrawing } from "./components/HangmanDrawing"
+import { HangmanWord } from "./components/HangmanWord"
+import { Keyboard } from "./components/Keyboard"
 import words from "./wordList.json"
+import RefreshButton from "./components/RefreshButton"
 
 function getWord() {
   return words[Math.floor(Math.random() * words.length)]
@@ -74,6 +75,8 @@ function App() {
         alignItems: "center",
       }}
     >
+      <RefreshButton />
+
       <div style={{ fontSize: "2rem", textAlign: "center" }}>
         {isWinner && "Winner! - Refresh to try again"}
         {isLoser && "Nice Try - Refresh to try again"}
