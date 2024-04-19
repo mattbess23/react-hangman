@@ -1,5 +1,4 @@
 import React from 'react';
-import styles from './RereshButton.module.css'
 
 interface ButtonProps {
   onClick: () => void;
@@ -8,7 +7,7 @@ interface ButtonProps {
 const Button: React.FC<ButtonProps> = ({ onClick, children }) => {
   return (
     <button onClick={onClick}>
-      {children}className={`${styles.btn}`}
+      {children}
     </button>
   );
 };

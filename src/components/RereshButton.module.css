@@ -1,26 +1,18 @@
-.btn {
-    width: 100%;
-    border: 3px solid black;
-    background: none;
-    aspect-ratio: 1 / 1;
-    font-size: 2.5rem;
-    text-transform: uppercase;
-    padding: .5rem;
-    font-weight: bold;
-    cursor: pointer;
-    color: black;
-  }
-  
-  .btn.active {
-    background-color: hsl(200, 100%, 50%);
-    color: white;
-  }
-  
-  .btn.inactive {
-    opacity: .3;
-  }
-  
-  .btn:hover:not(:disabled),
-  .btn:focus:not(:disabled) {
-    background-color: hsl(200, 100%, 75%);
-  }
+/* RereshButton.module.css */
+
+.button {
+  background-color: white;
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #f0f0f0; /* Change color on hover if needed */
+}
+
+.button:focus {
+  outline: none; /* Remove focus outline */
+}
